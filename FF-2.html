@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <title>Happy Go Lucky</title>
+        <link rel="icon" type="image/png" href="favicon.jpg" />
+        <script>
+            function Validatemail() {
+          var mail=document.getElementById("text").value;
+          var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+          
+          if (regx.text(mail)) {
+                      alert("Valid email address!");
+                          
+            return true;
+          
+          } else {
+                      alert("Invalid email address!");
+                              
+            return false;
+          
+          }
+          
+          }   
+
+          function CheckPassword() 
+{ 
+var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+if(inputtxt.value.match(decimal)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Wrong...!')
+return false;
+}
+} 
+              </script>
+</head>
+<body>
+    <h1><center><b>Happy Go Lucky</b></center></h1>
+<center><form >
+    <label for="mail">Enter your email</label>
+    <input type="text" id="text"  maxLength="64" required
+    placeholder="username@gmail.com" onclick="validatemail()" >
+
+
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" onclick="checkPassword()" name="pwd" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <button  type="button" class="login">login</button>
+</form>
+<p>Check out the following public events happening around you! </p><br>
+<p>Login in to view more!
+    <a href="FF-26-1.html"> Or Sign Up Here </a> 
+</center>
+</body>
+</html>
